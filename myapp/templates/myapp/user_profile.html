@@ -1,0 +1,26 @@
+{% extends 'myapp/base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block header %}
+{% include 'myapp/header.html' %}
+{% endblock %}
+
+{% block body %}
+<br><br>
+
+
+<center>
+    <br><br><br><br><br><br>
+    <h2><font color="#159948">User Details</font></h2>
+
+	<div class="container">
+        <div class="col-6">
+            {% include 'myapp/messages.html' %}
+            {% crispy form form.helper %}
+        </div>
+	</div>
+</center>
+
+
+{% endblock %}

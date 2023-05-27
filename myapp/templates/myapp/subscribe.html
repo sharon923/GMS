@@ -1,0 +1,30 @@
+
+{% extends 'myapp/base.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+{% block title %}
+{% endblock %}
+{% block background %}
+{% endblock %}
+{% block body %}
+    <section class="inner-page">
+        <center>
+            <table align="center">
+                <div class="container"><br>
+                     <h2><font color="#159948">SUBSCRIBE</font></h2>
+					 <div class="row">
+                        <div class="col-3">
+
+                        </div>
+                        <div class="col-6">
+                            {% crispy form form.helper %}
+                        </div>
+                        <div class="col-3"></div>
+                     </div>
+                </div>
+                {{errors}}
+                </table>
+    </section>
+  </main>
+  {% endblock %}
+  
